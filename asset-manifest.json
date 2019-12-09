@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/pierreportal/static/css/main.35f1454e.chunk.css",
+    "main.js": "/pierreportal/static/js/main.2e2f6185.chunk.js",
+    "main.js.map": "/pierreportal/static/js/main.2e2f6185.chunk.js.map",
+    "runtime-main.js": "/pierreportal/static/js/runtime-main.5fd44b67.js",
+    "runtime-main.js.map": "/pierreportal/static/js/runtime-main.5fd44b67.js.map",
+    "static/js/2.e8461a09.chunk.js": "/pierreportal/static/js/2.e8461a09.chunk.js",
+    "static/js/2.e8461a09.chunk.js.map": "/pierreportal/static/js/2.e8461a09.chunk.js.map",
+    "index.html": "/pierreportal/index.html",
+    "precache-manifest.931a42fb03a2ece966cff292d20de16f.js": "/pierreportal/precache-manifest.931a42fb03a2ece966cff292d20de16f.js",
+    "service-worker.js": "/pierreportal/service-worker.js",
+    "static/css/main.35f1454e.chunk.css.map": "/pierreportal/static/css/main.35f1454e.chunk.css.map",
+    "static/media/App.css": "/pierreportal/static/media/me.7593eddd.png"
+  }
+}
