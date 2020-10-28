@@ -3,12 +3,27 @@
   transition: all 0.2s ease;
   color: rgb(127, 127, 127);
 }
+.mobile-version-placeholder {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.switch-wrapper {
+  position: relative;
+}
+
+.switch-wrapper > div {
+  position: absolute;
+}
 
 .header {
   width: 100vw;
   background-color: transparent;
   padding: 1rem;
-  height: 6rem;
+  height: 3rem;
   /* background-color: red; */
 }
 
@@ -20,6 +35,7 @@
 
 .header .navigation a {
   color: rgba(0, 0, 0, 0.5);
+  margin-right: 0.5rem;
 }
 .header .navigation a:hover {
   color: rgba(0, 0, 0, 0.8);
@@ -135,7 +151,7 @@
 }
 .cv-container > .col {
   height: calc(
-    100vh - 7rem
+    100vh - 4rem
   ); /* full screen height - header height - 2 x paddings */
 }
 .cv-container > div:first-of-type {
@@ -243,24 +259,24 @@
   /* font-variant: normal; */
 }
 
-.work-item .text .tech-tag {
+.tech-tag {
   font-size: 0.7rem;
   margin-right: 0.3rem;
   border-radius: 0.3rem;
   height: 1.2rem;
   padding: 0.1rem;
 }
-.work-item .text .tech-tag.python,
-.work-item .text .tech-tag.nodeJS {
+.tech-tag.python,
+.tech-tag.nodeJS {
   color: green;
   background-color: rgba(0, 255, 0, 0.1);
 }
-.work-item .text .tech-tag.tensorflow {
+.tech-tag.tensorflow {
   color: orange;
   background-color: rgba(255, 162, 0, 0.1);
 }
-.work-item .text .tech-tag.javascript,
-.work-item .text .tech-tag.p5 {
+.tech-tag.javascript,
+.tech-tag.p5 {
   color: coral;
   background-color: rgba(255, 117, 31, 0.1);
 }
@@ -306,6 +322,66 @@
 
 .home-container {
   width: 100vw;
-  height: calc(100vh - 6rem);
+  height: calc(100vh - 3rem);
+  background-color: aliceblue;
+  overflow: hidden;
+}
+
+.home-item-particle {
+  width: 1rem;
+  height: 1rem;
+  background-color: lightgrey;
+  cursor: pointer;
+}
+
+.home-item-particle.python {
+  background-color: transparent;
+  border-bottom: 1rem solid green;
+  border-right: 0.5rem solid transparent;
+  border-top: 0.5rem solid transparent;
+  border-left: 0.5rem solid transparent;
+}
+.home-item-particle.python:hover,
+.home-item-particle.python.displayed {
+  border-bottom: 1rem solid black;
+}
+.home-item-particle.javascript {
+  background-color: orange;
+  border-radius: 50%;
+}
+
+.home-item-particle.machinelearning {
+  background-color: thistle;
+  transform: rotate(45deg);
+}
+.home-item-particle:not(.python):hover,
+.home-item-particle:not(.python).displayed {
+  background-color: black;
+}
+
+.home-container .project-display {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-container .project-display h2 {
+  margin-bottom: 1rem;
+  padding-bottom: 0.3rem;
+  border-bottom: solid 3px rgb(127, 127, 127);
+}
+
+.home-container .project-display p {
+  margin-bottom: 1rem;
+}
+
+.home-tech-tags {
+  margin-bottom: 1rem;
+}
+
+.home-title-link {
   background-color: #eee;
+  padding: 0.2rem;
 }

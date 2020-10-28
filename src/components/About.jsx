@@ -14,7 +14,7 @@ export default function About() {
           AI on medium.com/@hello.pierreportal.
           <br />
           <br />
-          After a few years living and working in France, the UK and Canada, I
+          {/* After a few years living and working in France, the UK and Canada, I
           came in Berlin in May 2019 to study full stack web development at
           Ironhack. Right after graduation I have been a teacher assistant for
           the two following cohorts. Preparing and giving lectures as well as
@@ -34,18 +34,18 @@ export default function About() {
           evolve. I strongly believe in a near future where humans and
           intelligent machines build together a better world.
           <br />
-          <br />
+          <br /> */}
           Outside of work and studies, I am a music lover and musician, beginner
           painter and sculptor, maker, nature observer. My background is in
           graphic design and music business. I have a taste and an eye for
           details and good design and I give a lot of importance in the visual
           impact of what I create, in software or artistic work.
         </p>
-        <p>
+        {/* <p>
           My current tech stack of choice: Web development - Javascript, React,
           Node.js, Express, MongoDB, Flask (python). Machine Learning - Python,
           Scikit-learn, Numpy, Pandas, Tensorflow, Pytorch.{" "}
-        </p>
+        </p> */}
       </div>
     </div>
   );

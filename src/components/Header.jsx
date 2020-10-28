@@ -29,9 +29,15 @@ export default function Header(props) {
         </div>
 
         <div className="row">
-          <div>LinkedIn</div>
-          <div>Medium</div>
-          <div>Github</div>
+          <a target="blank" href="https://github.com/pierreportal">
+            GitHub
+          </a>
+          <a target="blank" href="https://www.linkedin.com/in/pierreportal/">
+            Linkedin
+          </a>
+          <a target="blank" href="https://medium.com/@hello.pierreportal">
+            Medium
+          </a>
         </div>
       </div>
     </div>
