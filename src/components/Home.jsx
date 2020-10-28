@@ -36,13 +36,14 @@ export default function Home() {
   const handleMouseOver = (elem) => setDisplayedTitle(elem);
 
   useEffect(
-    () =>
-      setDisplayedTitle({ baseline: "Click on an icon to display a title." }),
+    () => setDisplayedTitle(works[Math.floor(Math.random() * works.length)]),
     []
   );
 
   return (
     <div className="home-container">
+      {/* {window.innerWidth >= 900 ? (
+        <> */}
       <div className="project-display col">
         <h2>{displayedTitle.title}</h2>
         {displayedTitle.baseline && <p>{displayedTitle.baseline}</p>}
@@ -66,6 +67,10 @@ export default function Home() {
         )}
       </div>
       {items}
+      {/* </>
+      ) : (
+        <p>Mobile version in construction...</p>
+      )} */}
     </div>
   );
 }

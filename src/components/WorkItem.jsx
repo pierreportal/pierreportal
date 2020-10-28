@@ -20,7 +20,7 @@ export default function WorkItem(props) {
         </div>
         <p>{item.baseline}</p>
         <a target="blank" href={item.url}>
-          {item.source}
+          {item.source} ⤴︎
         </a>
       </div>
     </div>
