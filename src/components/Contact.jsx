@@ -1,6 +1,8 @@
 import React from "react";
 
 export default function Contact() {
+  document.title = `Pierre Portal | Contact`;
+
   return (
     <div className="contact-container">
       <div className="text-content">

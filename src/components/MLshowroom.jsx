@@ -1,6 +1,8 @@
 import React from "react";
 
 export default function MLshowroom() {
+  document.title = `Pierre Portal | ML Lab`;
+
   const c = `function Call() {
     this is a function
     to cool stuff

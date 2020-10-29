@@ -1,6 +1,8 @@
 import React from "react";
 
 export default function About() {
+  document.title = `Pierre Portal | About`;
+
   return (
     <div className="about-container col">
       <div className="text-content">

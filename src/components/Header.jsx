@@ -28,13 +28,12 @@ export default function Header(props) {
               Contact
             </NavLink>
           </div>
-          <div>
+          {/* <div>
             <NavLink exact={true} to="/ml-lab" activeClassName="selected">
               ML lab
             </NavLink>
-          </div>
+          </div> */}
           <div>
-            {/* <LightDarkModeButton /> */}
             <NightDaySwitch />
           </div>
         </div>

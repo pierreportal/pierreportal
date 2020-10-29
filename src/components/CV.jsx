@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Education from "./Education";
 import Skills from "./Skills";
 import Works from "./Works";
 import data from "../fakeData";
 
 export default function CV() {
+  document.title = `Pierre Portal | CV`;
+
   return (
     <div className="cv-container row">
       <div className="col">

@@ -469,6 +469,11 @@ body {
   align-items: center;
 }
 
+/* .home-container .project-display > h4 {
+  z-index: 1;
+  mix-blend-mode: exclusion;
+} */
+
 .home-container .project-display h2 {
   margin-bottom: 1rem;
   padding-bottom: 0.3rem;

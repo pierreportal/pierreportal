@@ -11,6 +11,7 @@ const randY = (margin) =>
 console.log("randY: ", randY);
 
 export default function Home() {
+  document.title = `Pierre Portal`;
   const [displayedTitle, setDisplayedTitle] = useState({});
 
   const items = works

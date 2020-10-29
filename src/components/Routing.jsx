@@ -20,7 +20,7 @@ export default function Routing() {
       <Route exact={true} path="/cv" component={() => <CV />} />
       <Route exact={true} path="/about" component={() => <About />} />
       <Route exact={true} path="/contact" component={() => <Contact />} />
-      <Route exact={true} path="/ml-lab" component={() => <MLshowroom />} />
+      {/* <Route exact={true} path="/ml-lab" component={() => <MLshowroom />} /> */}
 
       {/* </AnimatedSwitch> */}
     </Switch>
