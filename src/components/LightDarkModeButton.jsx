@@ -1,17 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 export default function LightDarkModeButton() {
-  const [mode, setMode] = useState("light");
+  const [mode, setMode] = useState(
+    window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"
+  );
 
   const toggleButton = () => {
     if (mode === "light") {
-      document.querySelector("html").classList.add("dark-mode");
       setMode("dark");
     } else {
-      document.querySelector("html").classList.remove("dark-mode");
       setMode("light");
     }
   };
+
+  useEffect(() => {
+    if (mode === "dark") {
+      document.querySelector("html").classList.add("dark-mode");
+    } else {
+      document.querySelector("html").classList.remove("dark-mode");
+    }
+  }, [mode]);
 
   return (
     <div>
