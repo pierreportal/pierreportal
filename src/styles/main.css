@@ -1,8 +1,62 @@
+:root {
+  --main-bg-color: white;
+  --main-color: rgb(127, 127, 127);
+  --main-eee: #eee;
+  --main-links: rgba(0, 0, 0, 0.5);
+  --main-links-on: rgba(0, 0, 0, 0.8);
+  --main-home-bg-color: aliceblue;
+
+  --main-link-bg: #eee;
+}
+
+.dark-mode {
+  --main-bg-color: rgb(28 28 36);
+  --main-color: rgb(208, 205, 205);
+  --main-eee: #eee;
+  --main-links: rgba(255, 255, 255, 0.5);
+  --main-links-on: rgba(255, 255, 255, 0.8);
+  --main-home-bg-color: rgb(39, 39, 55);
+
+  --main-link-bg: #100b0b;
+}
+
+html,
+body {
+  background-color: var(--main-bg-color);
+  transition: background-color 0.2s ease;
+}
+
+.dark-mode-div {
+  width: 1.6rem;
+  height: 1.6rem;
+  cursor: pointer;
+  /* background-color: red; */
+  background-position: center;
+  background-size: cover;
+}
+.dark-mode-div.light {
+  background-image: url("../img/city-night.png");
+}
+.dark-mode-div.dark {
+  background-image: url("../img/city-sun.png");
+}
+/* body {
+  transition: background-color 0.2s ease;
+} */
+
 * {
+  font-size: 0.9rem;
   box-sizing: border-box;
-  transition: all 0.2s ease;
-  color: rgb(127, 127, 127);
-  font-size: 0.91rem;
+  color: var(--main-color);
+  transition: color 0.2s ease;
+}
+
+.dark-mode-button {
+  cursor: pointer;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  outline: none;
 }
 
 .mobile-version-placeholder {
@@ -18,7 +72,8 @@
 }
 
 .mobile-version-placeholder > a {
-  background-color: #eee;
+  background-color: var(--main-eee);
+  transition: background-color 0.2s ease;
   padding: 1rem;
   border-radius: 0.3rem;
   margin-bottom: 0;
@@ -47,14 +102,19 @@
 }
 
 .header .navigation a {
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--main-links);
+  transition: color 0.2s ease;
+
   margin-right: 0.5rem;
+  transition: all 0.2s ease;
 }
 .header .navigation a:hover {
-  color: rgba(0, 0, 0, 0.8);
+  color: var(--main-links-on);
+  transition: color 0.2s ease;
 }
 .header .navigation a.selected {
-  color: rgba(0, 0, 0, 0.8);
+  color: var(--main-links-on);
+  transition: color 0.2s ease;
 }
 
 .header .navigation > .row > div {
@@ -63,6 +123,10 @@
   /* cursor: pointer; */
   position: relative;
   /* font-variant: small-caps; */
+}
+
+.header .navigation > .row {
+  align-items: center;
 }
 
 /* .header .navigation > .row > div {
@@ -204,6 +268,7 @@
   padding: 0.15rem 0;
   position: relative;
   cursor: default;
+  transition: all 0.2s ease;
 }
 
 .cv-skills-column ul:first-of-type li:hover::before {
@@ -218,12 +283,7 @@
   z-index: -2;
   opacity: 0.5;
 }
-/* .cv-skills-column ul li:hover {
-    background-color: red;
-} */
-.skill-item {
-  /* mix-blend-mode: color-burn; */
-}
+
 .skill-levelbar {
   position: absolute;
   top: 0;
@@ -236,10 +296,14 @@
 }
 
 .work-item {
-  background-color: white;
+  background-color: var(--main-bg-color);
+  transition: background-color 0.2s ease;
+
   padding: 0.8rem;
-  border-bottom: solid 1px #eee;
+  border-bottom: solid 1px var(--main-eee);
   position: relative;
+  transition: all 0.2s ease;
+
   /* margin-bottom: 0.5rem; */
 }
 .work-item:hover {
@@ -297,11 +361,14 @@
   text-decoration: none;
   font-size: 0.7rem;
   padding: 0.3rem;
-  background-color: #eee;
+  background-color: var(--main-link-bg);
+  transition: background-color 0.2s ease;
+
   width: auto;
   display: flex;
   position: absolute;
   right: 0;
+  transition: all 0.2s ease;
 }
 
 .experience-item {
@@ -322,7 +389,9 @@
 }
 
 .exp-item .company {
-  background-color: #eee;
+  background-color: var(--main-link-bg);
+  transition: background-color 0.2s ease;
+
   color: rgb(105, 109, 150);
   font-variant: small-caps;
   padding: 0.2rem;
@@ -336,7 +405,9 @@
 .home-container {
   width: 100vw;
   height: calc(100vh - 3rem);
-  background-color: aliceblue;
+  background-color: var(--main-home-bg-color);
+  transition: background-color 0.2s ease;
+
   overflow: hidden;
 }
 
@@ -345,6 +416,7 @@
   height: 1rem;
   background-color: lightgrey;
   cursor: pointer;
+  transition: all 0.2s ease;
 }
 
 .home-item-particle.python {
@@ -383,7 +455,8 @@
 .home-container .project-display h2 {
   margin-bottom: 1rem;
   padding-bottom: 0.3rem;
-  border-bottom: solid 3px rgb(127, 127, 127);
+  border-bottom: solid 2px var(--main-color);
+  transition: border-bottom 0.2s ease;
 }
 
 .home-container .project-display p {
@@ -395,7 +468,8 @@
 }
 
 .home-title-link {
-  background-color: #eee;
+  background-color: var(--main-link-bg);
+  transition: background-color 0.2s ease;
   padding: 0.2rem;
 }
 

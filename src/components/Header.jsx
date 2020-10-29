@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import LightDarkModeButton from "./LightDarkModeButton";
 
 export default function Header(props) {
   return (
@@ -25,6 +26,9 @@ export default function Header(props) {
             <NavLink exact={true} to="/contact" activeClassName="selected">
               Contact
             </NavLink>
+          </div>
+          <div>
+            <LightDarkModeButton />
           </div>
         </div>
 
