@@ -15,9 +15,11 @@ export default function LightDarkModeButton() {
 
   useEffect(() => {
     if (mode === "dark") {
+      document.querySelector("html").classList.remove("light-mode");
       document.querySelector("html").classList.add("dark-mode");
     } else {
       document.querySelector("html").classList.remove("dark-mode");
+      document.querySelector("html").classList.add("light-mode");
     }
   }, [mode]);
 

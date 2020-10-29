@@ -4,6 +4,7 @@ import CV from "./CV";
 import About from "./About";
 import Contact from "./Contact";
 import Home from "./Home";
+import MLshowroom from "./MLshowroom";
 import { AnimatedSwitch } from "react-router-transition";
 
 export default function Routing() {
@@ -19,6 +20,8 @@ export default function Routing() {
       <Route exact={true} path="/cv" component={() => <CV />} />
       <Route exact={true} path="/about" component={() => <About />} />
       <Route exact={true} path="/contact" component={() => <Contact />} />
+      <Route exact={true} path="/ml-lab" component={() => <MLshowroom />} />
+
       {/* </AnimatedSwitch> */}
     </Switch>
   );

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import LightDarkModeButton from "./LightDarkModeButton";
+import NightDaySwitch from "./NightDaySwitch";
 
 export default function Header(props) {
   return (
@@ -28,7 +29,13 @@ export default function Header(props) {
             </NavLink>
           </div>
           <div>
-            <LightDarkModeButton />
+            <NavLink exact={true} to="/ml-lab" activeClassName="selected">
+              ML lab
+            </NavLink>
+          </div>
+          <div>
+            {/* <LightDarkModeButton /> */}
+            <NightDaySwitch />
           </div>
         </div>
 
