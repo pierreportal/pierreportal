@@ -15,7 +15,7 @@ export default function Home() {
 
   const items = works
     .filter((x) => x.title !== displayedTitle.title)
-    .map((w) => (
+    .map((w, i) => (
       <div
         key={w.title}
         className={`home-item-particle ${
@@ -27,11 +27,15 @@ export default function Home() {
         }`}
         style={{
           position: "absolute",
-          left: `${randX(40)}px`,
+          left: `${randX(100)}px`,
           top: `${randY(100)}px`,
         }}
         onClick={() => handleMouseOver(w)}
-      ></div>
+      >
+        {i >= works.length - 4 && (
+          <div className="home-new-project-tag">New!</div>
+        )}
+      </div>
     ));
   const handleMouseOver = (elem) => setDisplayedTitle(elem);
 

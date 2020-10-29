@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function WorkItem(props) {
-  const { item } = props;
+  const { item, isNew } = props;
 
   const techTags =
     item.tech &&
@@ -13,7 +13,7 @@ export default function WorkItem(props) {
   return (
     <div className="work-item row">
       <div className="icon">{item.icon}</div>
-      <div className="text col">
+      <div className="text education-item col">
         <div className="row">
           <h4>{item.title}</h4>
           <div className="row">{techTags}</div>
