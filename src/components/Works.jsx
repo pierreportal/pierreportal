@@ -24,6 +24,7 @@ export default function Works(props) {
           Some of my personal projects
         </h4>
         <ul>{workItems}</ul>
+        {/* Display only the last 5 or 6 and add a link to a new page to see all the projects */}
       </div>
     </div>
   );

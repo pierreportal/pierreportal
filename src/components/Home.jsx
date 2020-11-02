@@ -1,24 +1,42 @@
 import React, { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 
-import data from "../fakeData";
-const { works } = data;
+const stringToUrl = (str) =>
+  str
+    .toLowerCase()
+    .replace(/[^a-zA-Z0-9]/g, "-")
+    .replace("--", "");
 
-const randX = (margin) =>
-  margin / 2 + Math.random() * (window.innerWidth - margin);
-console.log("randX: ", randX);
-const randY = (margin) =>
-  margin / 2 + Math.random() * (window.innerHeight - margin);
-console.log("randY: ", randY);
+// import IsScrolling from "react-is-scrolling";
 
-export default function Home() {
+// import data from "../fakeData";
+// const { works } = data;
+
+function Home(props) {
+  const { works } = props;
+
   document.title = `Pierre Portal`;
+
   const [displayedTitle, setDisplayedTitle] = useState({});
+  const handleClickOnIcon = (elem) => setDisplayedTitle(elem);
+
+  // const [mouseIsOver, setMouseIsOver] = useState(false);
+  // const handleMouseOverIcon = (item) => setMouseIsOver(true);
+
+  useEffect(
+    () => setDisplayedTitle(works[Math.floor(Math.random() * works.length)]),
+    []
+  );
 
   const items = works
-    .filter((x) => x.title !== displayedTitle.title)
+    // .filter((x) => x.title !== displayedTitle.title)
     .map((w, i) => (
+      // <NavLink
+      //   exact={true}
+      //   to={`/portfolio/${stringToUrl(w.title)}`}
       <div
         key={w.title}
+        // onMouseOver={() => handleMouseOverIcon(w)}
         className={`home-item-particle ${
           w.tech ? w.tech[0] : w.categories[0].split(" ").join("")
         } ${
@@ -28,27 +46,17 @@ export default function Home() {
         }`}
         style={{
           position: "absolute",
-          left: `${randX(100)}px`,
-          top: `${randY(100)}px`,
+          ...w.position,
         }}
-        onClick={() => handleMouseOver(w)}
+        onMouseOver={() => handleClickOnIcon(w)}
       >
-        {i >= works.length - 4 && (
-          <div className="home-new-project-tag">New!</div>
-        )}
+        {i <= 2 && <div className="home-new-project-tag">New!</div>}
+        {/* </NavLink> */}
       </div>
     ));
-  const handleMouseOver = (elem) => setDisplayedTitle(elem);
-
-  useEffect(
-    () => setDisplayedTitle(works[Math.floor(Math.random() * works.length)]),
-    []
-  );
 
   return (
     <div className="home-container">
-      {/* {window.innerWidth >= 900 ? (
-        <> */}
       <div className="project-display col">
         <h2>{displayedTitle.title}</h2>
         {displayedTitle.baseline && <p>{displayedTitle.baseline}</p>}
@@ -70,12 +78,11 @@ export default function Home() {
             read on {displayedTitle.source}
           </a>
         )}
+        {/* <div>↓</div> */}
       </div>
       {items}
-      {/* </>
-      ) : (
-        <p>Mobile version in construction...</p>
-      )} */}
     </div>
   );
 }
+
+export default Home;

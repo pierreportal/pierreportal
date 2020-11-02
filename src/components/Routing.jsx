@@ -4,8 +4,19 @@ import CV from "./CV";
 import About from "./About";
 import Contact from "./Contact";
 import Home from "./Home";
+import Portfolio from "./Portfolio";
 import MLshowroom from "./MLshowroom";
-import { AnimatedSwitch } from "react-router-transition";
+// import { AnimatedSwitch } from "react-router-transition";
+
+import data from "../fakeData";
+const { works } = data;
+
+const randPosition = () => ({
+  left: `${100 / 2 + Math.random() * (window.innerWidth - 100)}px`,
+  top: `${100 / 2 + Math.random() * (window.innerHeight - 100)}px`,
+});
+
+const positionedData = works.map((w) => ({ ...w, position: randPosition() }));
 
 export default function Routing() {
   return (
@@ -16,10 +27,22 @@ export default function Routing() {
         atActive={{ opacity: 1 }}
         className="switch-wrapper"
       > */}
-      <Route exact={true} path="/" component={() => <Home />} />
+      <Route
+        exact={true}
+        path="/"
+        component={() => <Home works={positionedData} />}
+      />
       <Route exact={true} path="/cv" component={() => <CV />} />
       <Route exact={true} path="/about" component={() => <About />} />
       <Route exact={true} path="/contact" component={() => <Contact />} />
+      {/* <Route exact={true} path="/portfolio" component={() => <Portfolio />} /> */}
+
+      {/* <Route
+        exact={true}
+        path="/portfolio/:project"
+        component={() => <Contact />}
+      /> */}
+
       {/* <Route exact={true} path="/ml-lab" component={() => <MLshowroom />} /> */}
 
       {/* </AnimatedSwitch> */}

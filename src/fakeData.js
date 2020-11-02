@@ -1,5 +1,4 @@
 // const Post = require('../../models/Post')
-
 const data = {
   skills: [
     { label: "PYTHON", level: 6 },
@@ -50,10 +49,22 @@ const data = {
 
   works: [
     {
+      title: "Neural Network Playground",
+      baseline:
+        "A visual playground where we can build, compile and train a small fully connected neural network.",
+      icon: "🤖",
+      // date: "May 6",
+      source: "Github",
+      url: "https://github.com/pierreportal/neural-network-playground",
+      categories: ["machine learning"],
+      tech: ["python", "tensorflow", "javascript", "react"],
+    },
+
+    {
       title: "Machine Learning | Anomaly detection",
       baseline: "Using probability and statistics.",
-      icon: "🤖",
-      date: "May 6",
+      icon: "🧠",
+      // date: "May 6",
       source: "Medium",
       url:
         "https://medium.com/@hello.pierreportal/machine-learning-anomaly-detection-d0f8d8492975",
@@ -64,7 +75,7 @@ const data = {
       title: "Understand Entropy and Cross-entropy",
       baseline: "",
       icon: "🧮",
-      date: "Apr 20",
+      // date: "Apr 20",
       source: "Medium",
       url:
         "https://medium.com/@hello.pierreportal/understand-entropy-and-cross-entropy-8d37c698e698",
@@ -74,7 +85,7 @@ const data = {
       title: "Asymptotic analysis 101",
       baseline: "Big O",
       icon: "💻",
-      date: "Apr 18",
+      // date: "Apr 18",
       source: "Medium",
       url:
         "https://medium.com/@hello.pierreportal/asymptotic-analysis-101-c48e956a7b18",
@@ -84,7 +95,7 @@ const data = {
       title: "Deep learning | Study notes",
       baseline: "Basic equations for the fully connected Neural Network.",
       icon: "🧠",
-      date: "Dec 20",
+      // date: "Dec 20",
       source: "Medium",
       url:
         "https://medium.com/@hello.pierreportal/deep-learning-equations-to-remember-a8c5d769c201",
@@ -95,7 +106,7 @@ const data = {
       title: "Neural network introduction | Part 3",
       baseline: "Backward propagation.",
       icon: "🧠",
-      data: "Nov 15, 2018",
+      // data: "Nov 15, 2018",
       source: "Medium",
       url:
         "https://medium.com/@hello.pierreportal/neural-network-introduction-part-3-5a1ccabc51f8",
@@ -106,7 +117,7 @@ const data = {
       title: "Optimisation | Gradient descent",
       baseline: "And a refresher on derivatives.",
       icon: "∇",
-      data: "Nov 9, 2018",
+      // data: "Nov 9, 2018",
       source: "Medium",
       url:
         "https://medium.com/@hello.pierreportal/optimisation-gradient-descent-879c4c95cbda",
@@ -116,7 +127,7 @@ const data = {
       title: "Neural network introduction | Part 2",
       baseline: "Forward propagation and Cost function.",
       icon: "🧠",
-      data: "Nov 6, 2018",
+      // data: "Nov 6, 2018",
       source: "Medium",
       url:
         "https://medium.com/@hello.pierreportal/neural-network-forward-propagation-and-cost-function-f6bf2545ed18",
@@ -127,7 +138,7 @@ const data = {
       title: "Neural network introduction | Part 1",
       baseline: "Building the model.",
       icon: "🧠",
-      data: "Nov 4, 2018",
+      // data: "Nov 4, 2018",
       source: "Medium",
       url:
         "https://medium.com/@hello.pierreportal/neural-network-building-the-model-dc56610f0e0b",
