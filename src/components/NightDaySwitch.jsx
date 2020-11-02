@@ -2,9 +2,7 @@ import React, { useState, useEffect } from "react";
 // import styled from "styled-components";
 
 export default function NightDaySwitch(props) {
-  const [mode, setMode] = useState(
-    window.matchMedia("(prefers-color-scheme: dark)").matches
-  );
+  const [mode, setMode] = useState(new Date().getHours() >= 18);
   const swicthMode = () => setMode(!mode);
 
   useEffect(() => {
