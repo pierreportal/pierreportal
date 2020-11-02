@@ -27,12 +27,13 @@
 }
 
 .dark-mode h4 {
-  color: #78d9a6;
+  color: #939393;
 }
 
 .dark-mode .work-item h4,
 .dark-mode .education-item h4 {
-  color: burlywood;
+  /* color: burlywood; */
+  color: #939393;
 }
 
 html,
@@ -321,9 +322,13 @@ body {
 
   /* margin-bottom: 0.5rem; */
 }
-.work-item:hover {
-  background-color: rgba(238, 238, 238, 0.2);
+
+.dark-mode .work-item {
+  border-bottom: solid 1px rgba(127, 127, 127, 0.113);
 }
+/* .work-item:hover {
+  background-color: rgba(238, 238, 238, 0.2);
+} */
 .work-item:last-of-type {
   border-bottom: none;
   margin-bottom: 2rem;
@@ -437,7 +442,7 @@ body {
   height: 1rem;
   background-color: thistle;
 
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: all 0.2s ease;
   border-radius: 0.1rem;
 }
