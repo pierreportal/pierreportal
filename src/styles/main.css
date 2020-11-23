@@ -40,6 +40,7 @@ html,
 body {
   background-color: var(--main-bg-color);
   transition: background-color 0.3s ease;
+  overflow-x: hidden;
 }
 
 .dark-mode-div {
@@ -481,7 +482,8 @@ body {
   height: calc(100vh - 3rem);
   background-color: var(--main-home-bg-color);
   transition: background-color 0.2s ease;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .home-item-particle {
