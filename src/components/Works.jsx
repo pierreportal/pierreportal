@@ -17,6 +17,7 @@ export default function Works(props) {
           .map((item) => (
             <span
               className={`tech-tag ${item
+                .trim()
                 .toLowerCase()
                 .replace(" ", "")
                 .replace("-", "")}`}

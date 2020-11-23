@@ -411,6 +411,8 @@ body {
 
 .tech-tag.pandas,
 .tech-tag.numpy,
+.tech-tag.html,
+.tech-tag.css,
 .tech-tag.scikitlearn,
 .tech-tag.meteor {
   color: slateblue;
@@ -423,10 +425,12 @@ body {
 }
 .tech-tag.javascript,
 .tech-tag.p5,
-.tech-tag.jquery {
+.tech-tag.jquery,
+.tech-tag.es6 {
   color: coral;
   background-color: rgba(255, 117, 31, 0.1);
 }
+
 .work-item .text a {
   text-decoration: none;
   font-size: 0.7rem;

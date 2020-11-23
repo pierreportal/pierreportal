@@ -36,7 +36,7 @@ const data = {
       company: "LAWLIFT",
       details: [
         "LAWLIFT is a legal tech company offering solutions to law firms and big companies for creating dynamic legal document templates. I am working as a full stack software developer and I am in charge of building new exciting features or fixing bugs and issues in an agile working environment.",
-        "Stack used: Node js, Meteor, Vue, JQuery",
+        "Stack used: Javascript, es6, Node js, Meteor, Vue, JQuery, HTML, CSS",
       ],
       dates: "Jan 2020-present",
     },
@@ -45,7 +45,7 @@ const data = {
       company: "Ironhack - Berlin",
       details: [
         "Being part of the teaching team, I was assisting the lead teacher during the lectures and supporting students in labs and projects. This experience allowed me to reinforce my knowledge, work on my own technical projects and keep learning more advanced topics. I also gave lectures and conducted technical interviews. As well I developed valuable skills in project management, debugging, and tutoring.",
-        "Stack used: Node js, Express, React, MongoDB",
+        "Stack used: Javascript, es6, Node js, Express, React, MongoDB, HTML, CSS",
       ],
       dates: "Aug-Dec 2019",
     },

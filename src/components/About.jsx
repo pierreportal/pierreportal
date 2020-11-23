@@ -62,6 +62,8 @@ export default function About() {
             "Express",
             "MongoDB",
             "Flask",
+            "HTML",
+            "CSS",
           ].map((item) => (
             <span
               className={`tech-tag ${item
