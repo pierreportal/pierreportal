@@ -1,16 +1,6 @@
 // const Post = require('../../models/Post')
 const data = {
   skills: [
-    { label: "PYTHON", level: 6 },
-    { label: "MACHINE LEARNING", level: 6 },
-    { label: "DEEP LEARNING", level: 5 },
-    { label: "NLP", level: 4 },
-    { label: "NUMPY", level: 6 },
-    { label: "PYTORCH", level: 4 },
-    { label: "TENSORFLOW", level: 3 },
-    { label: "KERAS", level: 5 },
-    { label: "SCIKIT-LEARN", level: 6 },
-
     { label: "JAVASCRIPT", level: 8 },
     { label: "ES6", level: 8 },
     { label: "NODE JS", level: 6 },
@@ -23,6 +13,16 @@ const data = {
     { label: "HTML", level: 9 },
     { label: "CSS", level: 9 },
 
+    { label: "PYTHON", level: 6 },
+    { label: "MACHINE LEARNING", level: 6 },
+    { label: "DEEP LEARNING", level: 5 },
+    { label: "NLP", level: 4 },
+    { label: "NUMPY", level: 6 },
+    { label: "PYTORCH", level: 4 },
+    { label: "TENSORFLOW", level: 3 },
+    { label: "KERAS", level: 5 },
+    { label: "SCIKIT-LEARN", level: 6 },
+
     { label: "GIT", level: 6 },
     { label: "GRAPHIC DESIGN", level: 6 },
     { label: "AGILE METHODOLOGY", level: 6 },
@@ -34,15 +34,19 @@ const data = {
     {
       header: "Full Stack Software Developer",
       company: "LAWLIFT",
-      details:
+      details: [
         "LAWLIFT is a legal tech company offering solutions to law firms and big companies for creating dynamic legal document templates. I am working as a full stack software developer and I am in charge of building new exciting features or fixing bugs and issues in an agile working environment.",
+        "Stack used: Node js, Meteor, Vue, JQuery",
+      ],
       dates: "Jan 2020-present",
     },
     {
       header: "Teacher Assistant",
-      company: "Ironhack web development Bootcamp",
-      details:
+      company: "Ironhack - Berlin",
+      details: [
         "Being part of the teaching team, I was assisting the lead teacher during the lectures and supporting students in labs and projects. This experience allowed me to reinforce my knowledge, work on my own technical projects and keep learning more advanced topics. I also gave lectures and conducted technical interviews. As well I developed valuable skills in project management, debugging, and tutoring.",
+        "Stack used: Node js, Express, React, MongoDB",
+      ],
       dates: "Aug-Dec 2019",
     },
   ],
@@ -219,7 +223,7 @@ const data = {
     },
     {
       header: "Web development bootcamp",
-      company: "Ironhack, Berlin",
+      company: "Ironhack - Berlin",
       details:
         "During the bootcamp, I learned the best practice for developing full MERN stack applications.",
       dates: "Jun-Aug 2019",

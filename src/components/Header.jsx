@@ -50,7 +50,7 @@ export default function Header(props) {
           <a target="blank" href="https://www.linkedin.com/in/pierreportal/">
             Linkedin
           </a>
-          <a target="blank" href="https://medium.com/@hello.pierreportal">
+          <a target="blank" href="https://hello-pierreportal.medium.com/">
             Medium
           </a>
         </div>

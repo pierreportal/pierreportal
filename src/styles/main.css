@@ -174,7 +174,7 @@ body {
   background-color: #ddd;
   border-radius: 50%;
   margin-bottom: 2rem;
-  background-image: url("../img/me.png");
+  background-image: url("../img/pierreportal.jpg");
   background-size: cover;
 }
 .header .title .row {
@@ -203,7 +203,27 @@ body {
 .about-container {
   width: 100vw;
   flex: 1;
+  height: calc(100vh - 4rem);
   padding: 1rem 1rem 0 1rem;
+}
+
+.about-container .text-content {
+  max-width: 50rem;
+}
+.about-container a,
+.contact-container a {
+  /* background-color: var(--main-eee); */
+  padding: 0.3rem 0.15rem;
+  /* border-radius: 0.2rem; */
+  /* margin-left: 0rem; */
+  border-bottom: solid 2px var(--main-eee);
+}
+
+.about-stack-of-choice {
+  width: 100%;
+}
+.about-stack-of-choice h3 {
+  margin: 2rem 0 0.3rem 0;
 }
 
 .text-content {
@@ -366,13 +386,34 @@ body {
   background-color: #100b0b05;
 }
 .tech-tag.python,
-.tech-tag.nodeJS {
+.tech-tag.nodeJS,
+.tech-tag.nodejs,
+.tech-tag.pytorch,
+.tech-tag.mongodb,
+.tech-tag.vue {
   color: green;
   background-color: rgba(0, 255, 0, 0.1);
+}
+.tech-tag.flask {
+  color: tomato;
+  background-color: rgba(255, 99, 71, 0.1);
+}
+
+.tech-tag.express {
+  color: rgb(30, 171, 143);
+  background-color: rgba(030, 171, 143, 0.1);
 }
 .tech-tag.tensorflow {
   color: orange;
   background-color: rgba(255, 162, 0, 0.1);
+}
+
+.tech-tag.pandas,
+.tech-tag.numpy,
+.tech-tag.scikitlearn,
+.tech-tag.meteor {
+  color: slateblue;
+  background-color: rgba(105, 90, 205, 0.1);
 }
 
 .tech-tag.react {
@@ -380,7 +421,8 @@ body {
   background-color: rgba(44, 132, 255, 0.1);
 }
 .tech-tag.javascript,
-.tech-tag.p5 {
+.tech-tag.p5,
+.tech-tag.jquery {
   color: coral;
   background-color: rgba(255, 117, 31, 0.1);
 }
@@ -396,6 +438,11 @@ body {
   position: absolute;
   right: 0;
   transition: all 0.2s ease;
+}
+
+.work-details-stack {
+  margin-top: 0.5rem;
+  /* font-weight: bold; */
 }
 
 .experience-item {

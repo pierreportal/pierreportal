@@ -6,6 +6,27 @@ export default function Works(props) {
   const workItems = data.map((item) => (
     <WorkItem key={item.title} item={item} />
   ));
+  const formatStackDetails = (str) => {
+    // console.log(str.split("Stack used: "));
+    return (
+      <p className="work-details-stack">
+        <b>Stack used: </b>
+        {str
+          .split("Stack used: ")[1]
+          .split(",")
+          .map((item) => (
+            <span
+              className={`tech-tag ${item
+                .toLowerCase()
+                .replace(" ", "")
+                .replace("-", "")}`}
+            >
+              {item.trim()}
+            </span>
+          ))}
+      </p>
+    );
+  };
   const expItems = exp.map((item) => (
     <div className="experience-item">
       <div className="exp-item row">
@@ -13,7 +34,11 @@ export default function Works(props) {
         <div className="company">{item.company}</div>
         <div className="dates">{item.dates}</div>
       </div>
-      <p>{item.details}</p>
+      {item.details.map((details) => {
+        if (details.startsWith("Stack used:")) {
+          return formatStackDetails(details);
+        } else return <p key={details}>{details}</p>;
+      })}
     </div>
   ));
   return (

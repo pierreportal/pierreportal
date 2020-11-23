@@ -7,13 +7,21 @@ export default function About() {
     <div className="about-container col">
       <div className="text-content">
         <div className="about-pic"></div>
-        <p>Full stack software developer and AI enthusiast</p>
         <p>
-          {" "}
-          Passionate about AI and software engineering, self learning,
-          psychology, art, science, design, I build open source projects on
-          github.com/pierreportal and share thoughts about machine learning and
-          AI on medium.com/@hello.pierreportal.
+          <b>Full stack software developer and AI enthusiast</b>
+        </p>
+        <p>
+          With a solid artistic background, passionate about AI and software
+          engineering, self learning, psychology, art, science, design, I build
+          open source projects on{" "}
+          <a target="blank" href="https://github.com/pierreportal">
+            GitHub
+          </a>{" "}
+          and share thoughts about machine learning and AI on{" "}
+          <a target="blank" href="https://hello-pierreportal.medium.com/">
+            Medium
+          </a>
+          .
           <br />
           <br />
           {/* After a few years living and working in France, the UK and Canada, I
@@ -43,11 +51,46 @@ export default function About() {
           details and good design and I give a lot of importance in the visual
           impact of what I create, in software or artistic work.
         </p>
-        {/* <p>
-          My current tech stack of choice: Web development - Javascript, React,
-          Node.js, Express, MongoDB, Flask (python). Machine Learning - Python,
-          Scikit-learn, Numpy, Pandas, Tensorflow, Pytorch.{" "}
-        </p> */}
+
+        <p className="about-stack-of-choice">
+          My current tech stack of choice:
+          <h3>Web development</h3>
+          {[
+            "Javascript",
+            "React",
+            "Node js",
+            "Express",
+            "MongoDB",
+            "Flask",
+          ].map((item) => (
+            <span
+              className={`tech-tag ${item
+                .toLowerCase()
+                .replace(" ", "")
+                .replace("-", "")}`}
+            >
+              {item}
+            </span>
+          ))}
+          <h3>Machine Learning</h3>
+          {[
+            "Python",
+            "Scikit-learn",
+            "Numpy",
+            "Pandas",
+            "Tensorflow",
+            "Pytorch",
+          ].map((item) => (
+            <span
+              className={`tech-tag ${item
+                .toLowerCase()
+                .replace(" ", "")
+                .replace("-", "")}`}
+            >
+              {item}
+            </span>
+          ))}
+        </p>
       </div>
     </div>
   );
