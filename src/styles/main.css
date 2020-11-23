@@ -615,9 +615,13 @@ body {
   .header .navigation > .row:last-of-type {
     display: none;
   }
-  .cv-container > .col > div {
+  .cv-container > .col {
     height: auto;
     overflow-y: visible;
+  }
+
+  .cv-container > .col:last-of-type {
+    margin-bottom: 3rem;
   }
 }
 
