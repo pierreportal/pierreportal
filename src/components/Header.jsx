@@ -39,6 +39,16 @@ export default function Header(props) {
             </NavLink>
           </div> */}
           <div>
+            <NavLink
+              className="special-link-suprise"
+              exact={true}
+              to="/temp"
+              activeClassName="selected"
+            >
+              Temporary script : The Game of Life
+            </NavLink>
+          </div>
+          <div>
             <NightDaySwitch />
           </div>
         </div>

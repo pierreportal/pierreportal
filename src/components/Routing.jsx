@@ -5,6 +5,8 @@ import About from "./About";
 import Contact from "./Contact";
 import Home from "./Home";
 import NotFound from "./NotFound";
+import GameOfLife from "./GameOfLife";
+import Memos from "./Memos";
 import Portfolio from "./Portfolio";
 import MLshowroom from "./MLshowroom";
 // import { AnimatedSwitch } from "react-router-transition";
@@ -36,6 +38,11 @@ export default function Routing() {
       <Route exact={true} path="/cv" component={() => <CV />} />
       <Route exact={true} path="/about" component={() => <About />} />
       <Route exact={true} path="/contact" component={() => <Contact />} />
+
+      <Route exact={true} path="/temp" component={() => <GameOfLife />} />
+
+      {/* <Route exact={true} path="/memos" component={() => <Memos />} /> */}
+
       {/* <Route exact={true} path="/portfolio" component={() => <Portfolio />} /> */}
 
       {/* <Route

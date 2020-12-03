@@ -199,6 +199,10 @@ body {
   flex-direction: row;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .cv-container,
 .contact-container,
 .about-container {
@@ -601,6 +605,25 @@ body {
     var(--main-home-bg-color)
   ); */
 }
+.special-link-suprise {
+  color: orange !important;
+  /* background-color: rgb(201, 185, 163); */
+  border: solid 1px orange;
+  padding: 0 0.3rem;
+  /* width: 1.6rem; */
+  height: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.3rem;
+  transition: border 0.2s ease;
+}
+.special-link-suprise.selected {
+  cursor: pointer;
+  pointer-events: none;
+  color: var(--main-color) !important;
+  border: solid 1px var(--main-color);
+}
 
 @media only screen and (max-width: 1200px) {
   .cv-container > .col:first-of-type {
@@ -612,7 +635,8 @@ body {
   .cv-container {
     flex-direction: column;
   }
-  .work-item .icon {
+  .work-item .icon,
+  .sunrise-container {
     display: none;
   }
   .header .navigation {
@@ -762,4 +786,75 @@ body {
 .not-exist h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
+}
+
+.memo-container {
+  width: 100vw;
+  align-items: center;
+  height: calc(100vh - 4rem);
+}
+.memos-search-container {
+  width: 600px;
+  justify-content: center;
+  height: 3rem;
+}
+.memos-search-container input {
+  width: 100%;
+  border-radius: 0.3rem;
+  border: none;
+  background-color: #ddd;
+  outline: none;
+  padding: 0 1rem;
+  transition: background 0.2s ease;
+}
+.memos-search-container input:focus {
+  background-color: #eee;
+}
+.memos-window {
+  margin-top: 2rem;
+  background-color: rgb(34, 34, 41);
+  width: 600px;
+  height: 70vh;
+  border-radius: 0.5rem;
+  padding: 0rem;
+  border-bottom: solid 2px rgb(107, 107, 161);
+}
+
+.memos-window > div:first-child {
+  padding: 1rem;
+  opacity: 0.5;
+}
+
+.memos-window .red,
+.memos-window .yel,
+.memos-window .gre {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background-color: red;
+  margin-right: 0.3rem;
+}
+
+.memos-window .red {
+  background-color: tomato;
+}
+.memos-window .yel {
+  background-color: rgb(255, 234, 0);
+}
+
+.memos-window .gre {
+  background-color: rgb(102, 255, 112);
+}
+
+.memos-window > div:nth-of-type(2) {
+  padding: 0 2rem;
+}
+
+.memo-window-content,
+.memo-window-content li {
+  color: rgb(0, 255, 149) !important;
+  font-family: "Courier New", Courier, monospace;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }

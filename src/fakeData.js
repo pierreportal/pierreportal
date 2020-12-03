@@ -12,6 +12,7 @@ const data = {
     { label: "VUE", level: 5 },
     { label: "HTML", level: 9 },
     { label: "CSS", level: 9 },
+    { label: "DOCKER", level: 3 },
 
     { label: "PYTHON", level: 6 },
     { label: "MACHINE LEARNING", level: 6 },
@@ -244,6 +245,29 @@ const data = {
       dates: "Dec 2018",
     },
   ],
+  memos: {
+    git: [
+      "~ git init",
+      "~ git status",
+      "~ git add",
+      "~ git checkout (-b) <branch> | <file>",
+      `~ git commit -m "..."`,
+      "~ git push",
+      "~ git merge <branch name>",
+    ],
+    docker: [
+      "FROM <env>",
+      "WORKDIR </path>",
+      "COPY package*.json ./",
+      "RUN npm install",
+      "COPY ..",
+      "ENV PORT=8080",
+      "EXPOSE 8080",
+      `CMD ["npm", "start"]`,
+      "~ docker ps",
+      "~ docker build -t <name>",
+    ],
+  },
 };
 
 export default data;
