@@ -636,7 +636,8 @@ body {
     flex-direction: column;
   }
   .work-item .icon,
-  .sunrise-container {
+  .sunrise-container,
+  .special-link-suprise {
     display: none;
   }
   .header .navigation {
