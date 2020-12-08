@@ -9,13 +9,14 @@ export default function Works(props) {
   const formatStackDetails = (str) => {
     // console.log(str.split("Stack used: "));
     return (
-      <p className="work-details-stack">
+      <p key={str} className="work-details-stack">
         <b>Stack used: </b>
         {str
           .split("Stack used: ")[1]
           .split(",")
           .map((item) => (
             <span
+              key={item}
               className={`tech-tag ${item
                 .trim()
                 .toLowerCase()
@@ -29,7 +30,7 @@ export default function Works(props) {
     );
   };
   const expItems = exp.map((item) => (
-    <div className="experience-item">
+    <div key={item.header} className="experience-item">
       <div className="exp-item row">
         <h4>{item.header}</h4>
         <div className="company">{item.company}</div>

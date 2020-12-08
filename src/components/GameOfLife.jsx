@@ -1,10 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Sketch from "react-p5";
 
 export default function GameOfLife() {
+  document.title = `Pierre Portal | The Game of Life`;
+
   const [pointSize, setPointSize] = useState(3);
   const [fRate, setFRate] = useState(15);
   const [randomRate, setRandomRate] = useState(20);
+
   const [neighborRules, setNeighborRules] = useState({
     0: 0, // default 0
     1: 0, // default 0

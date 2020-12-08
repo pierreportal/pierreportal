@@ -18,11 +18,11 @@ export default function NightDaySwitch(props) {
   return (
     <div
       onClick={swicthMode}
-      class={`sunrise-container ${mode ? "day" : "night"}`}
+      className={`sunrise-container ${mode ? "day" : "night"}`}
     >
-      <div class="sunrise-weel">
-        <div class="sun"></div>
-        <div class="moon"></div>
+      <div className="sunrise-weel">
+        <div className="sun"></div>
+        <div className="moon"></div>
       </div>
     </div>
   );

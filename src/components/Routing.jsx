@@ -6,12 +6,13 @@ import Contact from "./Contact";
 import Home from "./Home";
 import NotFound from "./NotFound";
 import GameOfLife from "./GameOfLife";
+import Biblio from "./Biblio";
 import Memos from "./Memos";
 import Portfolio from "./Portfolio";
 import MLshowroom from "./MLshowroom";
 // import { AnimatedSwitch } from "react-router-transition";
-
 import data from "../fakeData";
+
 const { works } = data;
 
 const randPosition = () => ({
@@ -40,6 +41,8 @@ export default function Routing() {
       <Route exact={true} path="/contact" component={() => <Contact />} />
 
       <Route exact={true} path="/temp" component={() => <GameOfLife />} />
+
+      <Route exact={true} path="/bookshelf" component={() => <Biblio />} />
 
       {/* <Route exact={true} path="/memos" component={() => <Memos />} /> */}
 

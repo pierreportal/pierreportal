@@ -3,7 +3,7 @@ import SkillItem from "./SkillItem";
 
 export default function Skills(props) {
   const skillItem = props.data.map((skill) => (
-    <li key={skill}>
+    <li key={skill.label}>
       <SkillItem item={skill.label} level={skill.level} />
     </li>
   ));

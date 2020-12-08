@@ -199,6 +199,9 @@ body {
   flex-direction: row;
 }
 
+.row.spread {
+  justify-content: space-evenly;
+}
 .justify-center {
   justify-content: center;
 }
@@ -209,7 +212,7 @@ body {
   width: 100vw;
   flex: 1;
   height: calc(100vh - 4rem);
-  padding: 1rem 1rem 0 1rem;
+  padding: 1rem 1rem 1rem 1rem;
 }
 
 .about-container .text-content {
@@ -389,6 +392,36 @@ body {
   padding: 0.1rem;
   color: rgb(171, 171, 171);
   background-color: #100b0b05;
+}
+.tech-tag.artificialintelligence {
+  color: tomato;
+  background-color: rgba(255, 99, 71, 0.1);
+}
+.tech-tag.society {
+  color: rgb(169, 71, 255);
+  background-color: rgba(169, 71, 255, 0.1);
+}
+.tech-tag.psychology,
+.tech-tag.spirituality {
+  color: rgb(108, 71, 255);
+  background-color: rgba(102, 71, 255, 0.1);
+}
+.tech-tag.music {
+  color: rgb(255, 200, 71);
+  background-color: rgba(255, 224, 71, 0.1);
+}
+.tech-tag.art,
+.tech-tag.digitalart {
+  color: rgb(255, 71, 71);
+  background-color: rgba(255, 71, 114, 0.1);
+}
+.tech-tag.machinelearning {
+  color: green;
+  background-color: rgba(0, 255, 0, 0.1);
+}
+.tech-tag.science {
+  color: rgb(0, 172, 181);
+  background-color: rgba(0, 242, 255, 0.175);
 }
 .tech-tag.python,
 .tech-tag.nodeJS,
@@ -624,6 +657,88 @@ body {
   color: var(--main-color) !important;
   border: solid 1px var(--main-color);
 }
+.bookshelf-main-container {
+  height: calc(100vh - 3rem);
+  width: 100vw;
+  /* background-color: red; */
+  padding-top: 5rem;
+  overflow-y: scroll;
+  padding-bottom: 4rem;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.bookshelf-container {
+  padding: 2rem;
+  margin: 0.3rem;
+  /* transform: rotate(90deg); */
+}
+.bookshelf-container h2 {
+  padding: 0;
+  margin-bottom: 0.5rem;
+}
+.bookshelf-container a {
+  /* background-color: var(--main-eee); */
+  padding: 0.3rem 0.15rem;
+  /* border-radius: 0.2rem; */
+  /* margin-left: 0rem; */
+  border-bottom: solid 2px var(--main-eee);
+  transition: transform 0.2s ease;
+}
+
+.bookshelf-container a:hover {
+  transform: translateX(-0.3rem);
+}
+
+.bookshelf-container ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.bookshelf-category h2 {
+  text-align: center;
+  /* align-items: center;
+  justify-content: center; */
+  /* background-color: red; */
+  /* height: 100vh; */
+}
+.bookshelf-link {
+  /* background-color: lightblue; */
+  border-radius: 0.1rem;
+  padding: 0.3rem 0;
+  text-align: center;
+  /* border: solid 1px red; */
+}
+.bookshelf-link > div {
+  padding: 0.3rem;
+}
+
+.bookshelf-people-item {
+  padding: 0.5rem;
+  display: inline-block;
+  /* background-color: red; */
+}
+.bookshelf-people-item:nth-of-type(even) {
+  opacity: 0.7;
+}
+/* .copy-clipboard-button {
+  background-color: white;
+  border-radius: 0.3rem;
+  border: none;
+  padding: 0.3rem;
+  outline: none;
+  transition: background 0.2s ease, opacity 0.2s ease;
+}
+.copy-clipboard-button:hover {
+  cursor: pointer;
+  background-color: #ddd;
+  border-radius: 0.3rem;
+  border: none;
+}
+.copy-clipboard-button:focus {
+  opacity: 0;
+  content: "Copied";
+  /* display: none; */
 
 @media only screen and (max-width: 1200px) {
   .cv-container > .col:first-of-type {
@@ -637,7 +752,8 @@ body {
   }
   .work-item .icon,
   .sunrise-container,
-  .special-link-suprise {
+  .special-link-suprise,
+  .only-desktop {
     display: none;
   }
   .header .navigation {

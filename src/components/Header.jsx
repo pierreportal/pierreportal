@@ -28,6 +28,16 @@ export default function Header(props) {
               Contact
             </NavLink>
           </div>
+          <div>
+            <NavLink
+              className="only-desktop"
+              exact={true}
+              to="/bookshelf"
+              activeClassName="selected"
+            >
+              Bookshelf
+            </NavLink>
+          </div>
           {/* <div>
             <NavLink exact={true} to="/portfolio" activeClassName="selected">
               Work

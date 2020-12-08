@@ -52,7 +52,7 @@ export default function About() {
           impact of what I create, in software or artistic work.
         </p>
 
-        <p className="about-stack-of-choice">
+        <div className="about-stack-of-choice">
           My current tech stack of choice:
           <h3>Web development</h3>
           {[
@@ -66,6 +66,7 @@ export default function About() {
             "CSS",
           ].map((item) => (
             <span
+              key={item}
               className={`tech-tag ${item
                 .toLowerCase()
                 .replace(" ", "")
@@ -84,6 +85,7 @@ export default function About() {
             "Pytorch",
           ].map((item) => (
             <span
+              key={item}
               className={`tech-tag ${item
                 .toLowerCase()
                 .replace(" ", "")
@@ -92,7 +94,7 @@ export default function About() {
               {item}
             </span>
           ))}
-        </p>
+        </div>
       </div>
     </div>
   );
