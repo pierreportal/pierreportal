@@ -2,6 +2,7 @@
 const data = {
   skills: [
     { label: "JAVASCRIPT", level: 8 },
+    { label: "TYPESCRIPT", level: 7 },
     { label: "ES6", level: 8 },
     { label: "NODE JS", level: 6 },
     { label: "GRAPHQL", level: 4 },
@@ -220,7 +221,7 @@ const data = {
 
       details:
         "Projects: Predictions of bike Sharing patterns (With a Neural Network built with Python and Numpy), Dog Breed Classifier (Building a CNN from scratch, then using Transfer Learning), Generate TV Script (NLP, LSTM network), Generate Faces (With Generative Adversarial Network), Deploying a Sentiment Analysis Model.",
-      dates: "(currently enrolled)",
+      dates: "Apr-Aug 2020",
     },
     {
       header: "Web development bootcamp",
