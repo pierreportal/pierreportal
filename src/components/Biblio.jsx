@@ -55,9 +55,7 @@ export default function Biblio() {
           <div className="bookshelf-category col">
             <h2 style={{ opacity: ".8", marginBottom: "1rem" }}>
               A few inspiring books{" "}
-              {showPeople
-                ? "..."
-                : "about Humans, and other intelligent machines."}
+              {showPeople ? "..." : "about Humans, and intelligent machines."}
             </h2>
             <div className="bookshelf-container col">
               <div className="col">{AIbookList}</div>
