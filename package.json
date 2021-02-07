@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "graphql": "^14.7.0",
     "http-proxy-middleware": "^0.20.0",
     "prismjs": "^1.22.0",
