@@ -8,7 +8,7 @@ const bookListItem = (item) => {
   const { title, author, link, tag } = item;
   return (
     <div className="bookshelf-link" key={title}>
-      <div>
+      {/* <div> */}
         <b>{title}</b> ~ {author}{" "}
         {tag.map((t) => (
           <span
@@ -18,7 +18,7 @@ const bookListItem = (item) => {
             {t}
           </span>
         ))}
-      </div>
+      {/* </div> */}
     </div>
   );
 };

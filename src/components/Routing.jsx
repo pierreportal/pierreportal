@@ -7,6 +7,8 @@ import Home from "./Home";
 import NotFound from "./NotFound";
 import GameOfLife from "./GameOfLife";
 import Biblio from "./Biblio";
+import Showroom from "./Showroom";
+
 import Memos from "./Memos";
 import Portfolio from "./Portfolio";
 import MLshowroom from "./MLshowroom";
@@ -43,6 +45,9 @@ export default function Routing() {
       <Route exact={true} path="/temp" component={() => <GameOfLife />} />
 
       <Route exact={true} path="/bookshelf" component={() => <Biblio />} />
+
+      {/* <Route exact={true} path="/showroom" component={() => <Showroom />} /> */}
+
 
       {/* <Route exact={true} path="/memos" component={() => <Memos />} /> */}
 

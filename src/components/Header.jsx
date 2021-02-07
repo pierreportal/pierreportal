@@ -23,6 +23,11 @@ export default function Header(props) {
               CV
             </NavLink>
           </div>
+          {/* <div>
+            <NavLink exact={true} to="/showroom" activeClassName="selected">
+            Showroom
+            </NavLink>
+          </div> */}
           <div>
             <NavLink exact={true} to="/contact" activeClassName="selected">
               Contact

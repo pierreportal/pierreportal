@@ -270,6 +270,37 @@ const data = {
     ],
   },
   biblio: {
+    resources: [
+      {
+        title: "Open Yale Courses",
+        link: "https://www.youtube.com/channel/UC4EY_qnSeAP1xGsh61eOoJA",
+      },
+      {
+        title: "Coursera",
+        link: "https://www.coursera.org/",
+      },
+      {
+        title: "Christopher Olah's blog",
+        link: "https://colah.github.io/",
+      },
+      {
+        title: "Edwin Chen's blog",
+        link: "http://blog.echen.me/",
+      },
+      {
+        title: "Tania Rascia",
+        link: "https://www.taniarascia.com/",
+      },
+      {
+        title: "Atlassian's Git tutorials",
+        link: "https://www.atlassian.com/git/tutorials",
+      },
+      {
+        title: "Discrete Math by Dr. Trefor Bazett",
+        link:
+          "https://www.youtube.com/playlist?list=PLHXZ9OQGMqxersk8fUxiUMSIx0DBqsKZS",
+      },
+    ],
     books: [
       {
         title: "Artificial Intelligence",
