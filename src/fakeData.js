@@ -34,13 +34,22 @@ const data = {
 
   experience: [
     {
+      header: "Software Engineer",
+      company: "Zendesk",
+      details: [
+        `"Zendesk is a service-first CRM company that builds software designed to improve customer relationships. Our software is powerful and flexible, and scales to meet the needs of any business. Even yours." (see zendesk.com/about)`,
+        "Stack used: Javascript, es6, TypeScript, GraphQL, Ruby, Rails, HTML, CSS",
+      ],
+      dates: "Apr 2021-present",
+    },
+    {
       header: "Full Stack Software Developer",
       company: "LAWLIFT",
       details: [
         "LAWLIFT is a legal tech company offering solutions to law firms and big companies for creating dynamic legal document templates. I am working as a full stack software developer and I am in charge of building new exciting features or fixing bugs and issues in an agile working environment.",
         "Stack used: Javascript, es6, Node js, Meteor, Vue, JQuery, HTML, CSS",
       ],
-      dates: "Jan 2020-present",
+      dates: "Jan 2020-Apr 2021",
     },
     {
       header: "Teacher Assistant",

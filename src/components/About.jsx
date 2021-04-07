@@ -8,7 +8,7 @@ export default function About() {
       <div className="text-content">
         <div className="about-pic"></div>
         <p>
-          <b>Full stack software developer and AI enthusiast</b>
+          <b>Software Engineer and AI enthusiast</b>
         </p>
         <p>
           With a solid artistic background, passionate about AI and software

@@ -415,11 +415,13 @@ body {
   color: rgb(255, 71, 71);
   background-color: rgba(255, 71, 114, 0.1);
 }
-.tech-tag.machinelearning {
+.tech-tag.machinelearning,
+.tech-tag.graphql {
   color: green;
   background-color: rgba(0, 255, 0, 0.1);
 }
-.tech-tag.science {
+.tech-tag.science,
+.tech-tag.typescript {
   color: rgb(0, 172, 181);
   background-color: rgba(0, 242, 255, 0.175);
 }
@@ -432,7 +434,9 @@ body {
   color: green;
   background-color: rgba(0, 255, 0, 0.1);
 }
-.tech-tag.flask {
+.tech-tag.flask,
+.tech-tag.ruby,
+.tech-tag.rails {
   color: tomato;
   background-color: rgba(255, 99, 71, 0.1);
 }
