@@ -2,7 +2,7 @@
 
 #### About me
 
-- I am a software engineer at [Zendesk](https://zendesk.com)
+- Software engineer at [Zendesk](https://zendesk.com)
 - AI enthusiast
 - Musician
 - Since 2018 I share my machine learning study notes on [Medium](https://medium.com/@hello-pierreportal)
