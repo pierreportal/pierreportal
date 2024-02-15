@@ -1,5 +1,3 @@
-# Pierre Portal
-
 #### About me
 
 - Software engineer at [Zendesk](https://zendesk.com)
