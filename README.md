@@ -66,3 +66,4 @@
 
 [Sustainable web design](https://sustainablewebdesign.org/)\
 [The A11y collective](https://www.a11y-collective.com/product/accessible-design-the-basics/?gad_source=1gclid=Cj0KCQiA5rGuBhCnARIsAN11vgS0UelZli06S7Lcs7Rq7kbu7gWWhTBZD1XIfbecJb_jWCsT7UsSS3gaAow2EALw_wcB)
+[Situational Awareness: The Decade Ahead](https://situational-awareness.ai/)
