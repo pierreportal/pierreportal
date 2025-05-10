@@ -68,4 +68,5 @@
 [The A11y collective](https://www.a11y-collective.com/product/accessible-design-the-basics/?gad_source=1gclid=Cj0KCQiA5rGuBhCnARIsAN11vgS0UelZli06S7Lcs7Rq7kbu7gWWhTBZD1XIfbecJb_jWCsT7UsSS3gaAow2EALw_wcB)\
 [Situational Awareness: The Decade Ahead](https://situational-awareness.ai/)\
 [The InterPlanetary File System](https://ipfs.tech/)\
-[ThechnoAnarchism.org](https://www.technoanarchism.org/)
+[ThechnoAnarchism.org](https://www.technoanarchism.org/)\
+[Tor Project](https://www.torproject.org/) - [Guide: Running a Tor Relay](https://blog.torproject.org/new-guide-running-tor-relay/)
