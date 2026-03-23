@@ -9,6 +9,7 @@
 
 <details>
     <summary>☁️ Web</summary>
+    <img alt="rust" src="https://img.shields.io/badge/rust-111?style=flat-square&logo=rust" />
     <img alt="typescript" src="https://img.shields.io/badge/typescript-111?style=flat-square&logo=typescript" />
     <img alt="react" src="https://img.shields.io/badge/react-111?style=flat-square&logo=react" />
     <img alt="threejs" src="https://img.shields.io/badge/three.js-111?style=flat-square&logo=three.js" />
@@ -16,7 +17,6 @@
     <img alt="graphql" src="https://img.shields.io/badge/graphql-111?style=flat-square&logo=graphql" />
     <img alt="mongodb" src="https://img.shields.io/badge/mongodb-111?style=flat-square&logo=mongodb" />
     <img alt="webpack" src="https://img.shields.io/badge/webpack-111?style=flat-square&logo=webpack" />
-    <img alt="eslint" src="https://img.shields.io/badge/eslint-111?style=flat-square&logo=eslint" />
 </details>
 
 <details>
@@ -42,6 +42,7 @@
 
 <details>
     <summary>👽 Other</summary>
+    <img alt="rust" src="https://img.shields.io/badge/rust-111?style=flat-square&logo=rust" />
     <img alt="raspberrypi" src="https://img.shields.io/badge/raspberrypi-111?style=flat-square&logo=raspberrypi" />
     <img alt="bash" src="https://img.shields.io/badge/bash-111?style=flat-square&logo=gnubash" />
     <img alt="blender" src="https://img.shields.io/badge/blender-111?style=flat-square&logo=blender" />
