@@ -1,9 +1,10 @@
 #### About me
 
+- [pierreportal.com](https://pierreportal.com)
 - Software engineer at [Zendesk](https://zendesk.com)
-- Open source and non-profit AI enthusiast
+- Open source and privacy centered softwares enthusiast
 - Musician
-- Since 2018 I share my machine learning study notes on [Medium](https://medium.com/@hello-pierreportal)
+- You can read my 2018 machine learning study notes on [Medium](https://medium.com/@hello-pierreportal)
 
 #### Some technologies I like to play with 👨‍💻
 
