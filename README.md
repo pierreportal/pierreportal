@@ -2,7 +2,7 @@
 
 - [pierreportal.com](https://pierreportal.com)
 - Software engineer at [Zendesk](https://zendesk.com)
-- Open source and privacy centered softwares enthusiast
+- Open source and privacy centered software enthusiast
 - Musician
 - You can read my 2018 machine learning study notes on [Medium](https://medium.com/@hello-pierreportal)
 
