@@ -1,10 +1,25 @@
-#### About me
+```
 
-- [pierreportal.com](https://pierreportal.com)
-- Software engineer at [Zendesk](https://zendesk.com)
-- Open source and privacy centered software enthusiast
-- Musician
-- You can read my 2018 machine learning study notes on [Medium](https://medium.com/@hello-pierreportal)
+8888888b.  d8b                                       8888888b.                  888             888 
+888   Y88b Y8P                                       888   Y88b                 888             888 
+888    888                                           888    888                 888             888 
+888   d88P 888  .d88b.  888d888 888d888 .d88b.       888   d88P .d88b.  888d888 888888  8888b.  888 
+8888888P"  888 d8P  Y8b 888P"   888P"  d8P  Y8b      8888888P" d88""88b 888P"   888        "88b 888 
+888        888 88888888 888     888    88888888      888       888  888 888     888    .d888888 888 
+888        888 Y8b.     888     888    Y8b.          888       Y88..88P 888     Y88b.  888  888 888 
+888        888  "Y8888  888     888     "Y8888       888        "Y88P"  888      "Y888 "Y888888 888
+
+```
+
+```
++============================ About =========================++======= Most used languages =======+
+|                                                            ||                                   |
+|    https://www.pierreportal.com                            ||    Typescript                     |
+|    Open source and privacy centered software enthusiast    ||    Rust                           |
+|    Artist & Musician                                       ||    Python                         |
+|                                                            ||                                   |
++============================================================++===================================+
+```
 
 #### Some technologies I like to play with 👨‍💻
 
