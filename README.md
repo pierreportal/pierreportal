@@ -2,8 +2,8 @@
 ```
 +============================ About =========================++======= Most used languages =======+
 |                                                            ||                                   |
-|    https://www.pierreportal.com                            ||    Typescript                     |
-|    Open source and privacy centered software enthusiast    ||    Rust                           |
+|    https://www.pierreportal.com                            ||    Rust                           |
+|    Open source and privacy centered software enthusiast    ||    Typescript                     |
 |    Artist & Musician                                       ||    Python                         |
 |                                                            ||                                   |
 +============================================================++===================================+
