@@ -9,8 +9,8 @@
 +============================================================++===================================+
 ```
 
+<!--
 #### Some technologies I like to play with 👨‍💻
-
 <details>
     <summary>☁️ Web</summary>
     <img alt="rust" src="https://img.shields.io/badge/rust-111?style=flat-square&logo=rust" />
@@ -61,8 +61,8 @@
     <img alt="lisp" src="https://img.shields.io/badge/lisp-111?style=flat-square&logo=lisp" />
     <img alt="clojure" src="https://img.shields.io/badge/clojure-111?style=flat-square&logo=clojure" />
 </details>
-
 #### To stay in touch with me
+-->
 
 [![Medium](https://img.shields.io/badge/Medium-12100E?style=flat-square&logo=medium&logoColor=white)](https://medium.com/@hello-pierreportal)
 [![LinkedIn](https://img.shields.io/badge/Linkedin-0A66C2?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/pierreportal/)
