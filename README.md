@@ -8,7 +8,7 @@
 |                                                            ||                                   |
 +============================================================++===================================+
 ```
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/P3R421OTSQ)
+<!-- [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/P3R421OTSQ) -->
 
 <!--
 #### Some technologies I like to play with 👨‍💻
